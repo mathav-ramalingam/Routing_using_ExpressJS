@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Hina+Mincho&family=Libre+Caslon+Display&family=Meddon&family=Pinyon+Script&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Satisfy&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Teachers:ital,wght@0,400..800;1,400..800&family=Tenali+Ramakrishna&family=WindSong:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+        .header {
+            text-align: center;
+            font-family: 'Cormorant Unicase', serif;
+            font-size: 40px;
+            margin-top: 80px;
+        }
+        .service1 {
+            height: 400px;
+            background-color: white;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .service2, .service3, .service4, .service5 {
+            height: 400px;
+            background-color: white;
+            width: 100%;
+        }
+        #img1, #img3, #img5 {
+            padding-left: 80px;
+            padding-top: 46px;
+            border-top-right-radius: 130px 180px;
+        }
+        #img2, #img4 {
+            margin-left: 950px;
+            padding-top: 46px;
+            border-top-left-radius: 130px 180px;
+        }
+        .text-container1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 20px;
+        }
+        #head1 {
+            font-family: 'Cormorant Unicase', serif;
+            font-size: 35px;
+            margin-top: 100px;
+        }
+        #content1 {
+            font-family: 'Tenali Ramakrishna', serif;
+            font-size: 25px;
+            padding-top: 0px;
+        }
+        .text-container2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 900px;
+        }
+        #head2 {
+            font-family: 'Cormorant Unicase', serif;
+            font-size: 35px;
+            margin-top: -300px;
+            padding-left: 50px;
+        }
+        #content2 {
+            font-family: 'Tenali Ramakrishna', serif;
+            font-size: 25px;
+            padding-top: -10px;
+            padding-left: 50px;
+        }
+        .text-container3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 570px;
+            width: 880px;
+        }
+        #head3 {
+            font-family: 'Cormorant Unicase', serif;
+            font-size: 35px;
+            margin-top: -320px;
+        }
+        #content3 {
+            font-family: 'Tenali Ramakrishna', serif;
+            font-size: 25px;
+            padding-top: -10px;
+        }
+        .text-container4{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 900px;
+        }
+        #head4 {
+            font-family: 'Cormorant Unicase', serif;
+            font-size: 35px;
+            margin-top: -290px;
+            padding-left: 40px;
+        }
+        #content4 {
+            font-family: 'Tenali Ramakrishna', serif;
+            font-size: 25px;
+            padding-top: -10px;
+            padding-left: 40px;
+        }
+        .text-container5 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 570px;
+            width: 880px;
+        }
+        #head5 {
+            font-family: 'Cormorant Unicase', serif;
+            font-size: 35px;
+            margin-top: -290px;
+        }
+        #content5 {
+            font-family: 'Tenali Ramakrishna', serif;
+            font-size: 25px;
+            padding-top: -10px;
+        }
+        .navbar {
+            overflow: hidden;
+            position: fixed; 
+            width: 100vw;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .navbar a {
+            float: right;
+            display: block;
+            color: #000000;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 55px;
+            font-family: Merriweather;
+            font-size: 17px;
+        }
+        
+        .navbar a:hover {
+            font-size: 100%;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="http://localhost:4000/aboutus">About us</a>
+        <a href="http://localhost:4000/coffee"><span style="text-decoration: underline; text-underline-offset: 5px;">Coffee</span></a>
+        <a href="http://localhost:4000/home">Home</a>
+    </div>
+    
+    <div class="header">Coffee</div>
+    <div class="service1">
+        <img src="choco_coffe.jpg" id="img1" height="300px" width="450px">
+        <div class="text-container1">
+            <h2 id="head1">Chocolate Coffee</h2>
+            <p id="content1">Chocolate coffee combines the robust flavor of coffee with the rich sweetness of chocolate, creating a decadent beverage. It offers a delightful balance of bitterness and sweetness, perfect for those with a sweet tooth. The cocoa enhances the complexity of the coffee, resulting in a luxurious and indulgent experience. Whether enjoyed hot or cold, chocolate coffee is a comforting treat that satisfies both coffee and chocolate lovers alike.</div>
+    </div>
+    <div class="service2">
+        <img src="black_coffe.jpg" id="img2" height="300px" width="450px">
+        <div class="text-container2">
+            <h2 id="head2">Black Coffee</h2>
+            <p id="content2">Black coffee, unadorned by milk or sugar, offers a pure and intense flavor experience. Its bold and robust taste is derived solely from the beans and brewing method. Rich in antioxidants and low in calories, black coffee is favored for its simplicity and health benefits. With its invigorating properties, it serves as a morning ritual or a midday pick-me-up, providing a jolt of energy and enhancing mental alertness.</div>
+    </div>
+    <div class="service3">
+        <img src="cappuccino.jpg" id="img3" height="300px" width="450px">
+        <div class="text-container3">
+            <h2 id="head3">Cappuccino</h2>
+            <p id="content3">Cappuccino is a classic Italian coffee beverage that features a harmonious blend of equal parts espresso, steamed milk, and frothed milk. This balance creates a rich and creamy texture with a bold coffee flavor, complemented by a smooth, velvety finish. Often enjoyed in the morning, cappuccino offers a perfect marriage of strong espresso and luscious milk froth. Topped with a sprinkle of cocoa or cinnamon, it provides a delightful sensory experience and a comforting warmth with every sip.</div>
+    </div>
+    <div class="service4">
+        <img src="ice_coffe.jpg" id="img4" height="300px" width="450px">
+        <div class="text-container4">
+            <h2 id="head4">Iced coffee</h2>
+            <p id="content4">Iced coffee is a refreshing alternative to hot coffee, perfect for warm weather or a cooling caffeine fix. It involves brewing coffee normally and then chilling it, often served over ice. The result is a crisp and invigorating beverage that maintains the rich flavors of coffee while offering a brisk, cool sensation. Variations include adding milk, sweeteners, or flavored syrups to enhance its taste. Iced coffee is versatile and can be enjoyed black or with a variety of add-ins, catering to diverse preferences and making it a popular choice year-round.</div>
+    </div>
+    <div class="service5">
+        <img src="masala_coffe.jpg" id="img5" height="300px" width="450px">
+        <div class="text-container5">
+            <h2 id="head5">Masala Coffee</h2>
+            <p id="content5">Masala coffee combines robust coffee with aromatic spices like cardamom, cinnamon, and ginger, creating a rich and complex flavor. The spices not only add warmth but also offer health benefits such as improved digestion and circulation. Popular in Indian households, this beverage reflects a rich cultural tradition and provides a comforting experience. Versatile in preparation, masala coffee can be enjoyed hot or iced, tailored to personal tastes.</div>
+    </div>
+</body>
+</html>
